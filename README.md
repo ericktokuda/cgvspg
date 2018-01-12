@@ -1,5 +1,5 @@
 # Computer generated images vs. digital photographs: A synergetic feature and classifier combination approach
-Eric Tokuda, Helio Pedrini, AndersonRocha
+Eric Tokuda, Helio Pedrini, Anderson Rocha
 
 
 This repository provide the code and the data used in the above publication. For more details, please check [the article](http://www.sciencedirect.com/science/article/pii/S1047320313001557) or fell free to contact me.
