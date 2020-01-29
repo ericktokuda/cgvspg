@@ -1,7 +1,7 @@
 function ret = getFeatures_popescu(A)
 
 	A = double(A);
-        maxiter = 1000
+        maxiter = 1000;
 
 	if (size(A, 3) < 3)
 		[imw, imh] = size(A);
@@ -84,7 +84,7 @@ function ret = getFeatures_popescu(A)
 				shiftedB=cat (2,shiftedB, shiftN(B(:,:),neigh_i{l},neigh_j{l}));
 			end
 
-                        iter = 0
+                        iter = 0;
 			while (norm(a-a_prev)>err & iter < maxiter)
 				a_prev=a;
 				% Expectation
