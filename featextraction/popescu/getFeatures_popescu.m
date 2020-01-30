@@ -25,6 +25,7 @@ function ret = getFeatures_popescu(A)
 			shiftedB=cat (2,shiftedB, shiftN(B(:,:),neigh_i{l},neigh_j{l}));
 		end
 
+                iter = 0;
 		while (norm(a-a_prev)>err)
 			a_prev=a;
 			% Expectation
@@ -52,6 +53,7 @@ function ret = getFeatures_popescu(A)
 			a=(M\C)';
 			aux=w.*r2;
 			s=sqrt(sum(aux)/sum(w));
+                        iter = iter + 1
 		end
 		%alpha{c}=a;    
 		%ret=[ret alpha{c}];	
@@ -112,6 +114,7 @@ function ret = getFeatures_popescu(A)
 				a=(M\C)';
 				aux=w.*r2;
 				s=sqrt(sum(aux)/sum(w));
+                                iter = iter + 1
 			end
 			%alpha{c}=a;    
 			%ret=[ret alpha{c}];	
@@ -119,7 +122,6 @@ function ret = getFeatures_popescu(A)
 			%mapP=-log(abs(fft2(P)));
 			newP=P(2:imw-1,2:imw-1);
 			ret=[ret getStatistics(newP(:))];
-                        iter = iter + 1
 		end
 	end
 
