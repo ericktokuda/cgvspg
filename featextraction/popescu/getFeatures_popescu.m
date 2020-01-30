@@ -53,7 +53,7 @@ function ret = getFeatures_popescu(A)
 			a=(M\C)';
 			aux=w.*r2;
 			s=sqrt(sum(aux)/sum(w));
-                        iter = iter + 1
+                        iter = iter + 1;
 		end
 		%alpha{c}=a;    
 		%ret=[ret alpha{c}];	
@@ -114,7 +114,7 @@ function ret = getFeatures_popescu(A)
 				a=(M\C)';
 				aux=w.*r2;
 				s=sqrt(sum(aux)/sum(w));
-                                iter = iter + 1
+                                iter = iter + 1;
 			end
 			%alpha{c}=a;    
 			%ret=[ret alpha{c}];	
